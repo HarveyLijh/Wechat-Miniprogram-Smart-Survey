@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view style="margin-left:8%; margin-right:8%" class="container">
+
+  <!-- 用户 openid -->
+  <!-- <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+      size="default"
+    ></button>
+    <view class="userinfo-nickname-wrapper">
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view>
+  </view> -->
+  <text style="font-weight: bold; font-size: 45rpx">\n\n空气污染防护行为调查\n\n\n</text>
+  <text style="font-size: 36rpx" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好，我们是来自XXX的环境健康研究团队，为了解真实的大气污染防护意识和防护行为，特开展此次调查活动，感谢您的配合。同时，在您结束问卷调查后，将根据您的防护意识和防护行为为您提供专属的空气污染防护行为提升方案，为保证该提升方案对您真实有效，请在问卷填写过程中，尽可能填写您的真实行为和选择。\n\n\n</text>
+  <view>
+      <button bindtap="startSurvey">开始答题</button>
+  </view>
+
+
+  <!-- 上传图片 -->
+  <!-- <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view> -->
+
+
+  <!-- 操作数据库 -->
+  <!-- <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view> -->
+
+  <!-- 即时通信 -->
+  <!-- <view class="uploader">
+    <navigator url="../im/im" open-type="navigate" class="uploader-text">
+      <text>即时通信 Demo</text>
+    </navigator>
+  </view> -->
+
+  <!-- 新建云函数 -->
+  <!-- <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view> -->
+
+  <!-- 云调用 -->
+  <!-- <view class="uploader">
+    <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
+      <text>云调用</text>
+    </navigator>
+  </view>
+ -->
+
+</view>

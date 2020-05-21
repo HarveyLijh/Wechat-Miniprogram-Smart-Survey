@@ -1,0 +1,79 @@
+<!--miniprogram/pages/survey/survey.wxml-->
+<form bindsubmit="submitSurvey">
+
+	<!-- Question group 1 -->
+	<view hidden="{{G1_hide}}">
+		<image class="center_images" src="{{image_1}}"></image>
+		<view style="margin-left: 20%">
+			<text>\n{{image_info_1}}AQI = {{rand_aqi_1}}\n</text>
+		</view>
+		<view hidden="{{Q1_hide}}">
+			<text >\n1.	当看到室外空气状况如上图所示时，</text>
+			<text style="font-weight: bold">如果您需要外出工作/上学，</text>
+			<text>您是否会选择改变出行方式或推迟出行计划 ？</text>
+			<radio-group data-index="1" class="radio-group" bindchange="radioChange">
+				<label class="radio" wx:for="{{Q1}}">
+					<radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+				</label>
+			</radio-group>
+		</view>
+		<view hidden="{{Q1_a_hide}}">
+			<text >\n1.a.	如果您需要外出工作/上学，</text>
+			<text style="font-weight: bold">您是否会佩戴口 ？</text>
+			<radio-group data-index="1.1" class="radio-group" bindchange="radioChange">
+				<label class="radio" wx:for="{{Q_a1}}">
+					<radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+				</label>
+			</radio-group>
+		</view>
+		<button data-index="1" bindtap="next_page">下一题</button>
+	</view>
+
+
+	<!-- Question group 2 -->
+	<view hidden="{{G2_hide}}">
+		<image class="center_images" src="{{image_2}}"></image>
+		<view style="margin-left: 20%">
+			<text>\n{{image_info_2}}AQI = {{rand_aqi_2}}\n</text>
+		</view>
+		<view hidden="{{Q2_hide}}">
+			<text >\n2.	当看到室外空气状况并查询到AQI数值，如上图所示时，如果您需要外出进行体育锻炼（或其他休闲娱乐活动），</text>
+			<text style="font-weight: bold">您是否会选择改变出行方式或推迟出行计划 ？</text>
+			<radio-group data-index="2" class="radio-group" bindchange="radioChange">
+				<label class="radio" wx:for="{{Q2}}">
+					<radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+				</label>
+			</radio-group>
+		</view>
+		<view hidden="{{Q2_a_hide}}">
+			<text >\n2.a.	如果您需要外出工作/上学，</text>
+			<text style="font-weight: bold">您是否会佩戴口 ？</text>
+			<radio-group data-index="2.1" class="radio-group" bindchange="radioChange">
+				<label class="radio" wx:for="{{Q_a2}}">
+					<radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+				</label>
+			</radio-group>
+		</view>
+		<button data-index="2" bindtap="next_page">下一题</button>
+	</view>
+
+	<!-- Personal Info -->
+	<view hidden="{{personInfo_hide}}">
+		<text>1. 请问您的年龄是: </text>
+		<input type="number" bindinput='get_age' placeholder=""></input>
+		<text>2. 请问您过去两年的常居住地为: </text>
+		<input type="text" bindinput='get_home' placeholder=""></input>
+		<text>3. 请问您的受教育程度为: </text>
+		<radio-group data-index="info" class="radio-group" bindchange="radioChange">
+			<label class="radio" wx:for="{{p_info}}">
+				<radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+			</label>
+		</radio-group>
+			<button data-index="3" bindtap="next_page">下一题</button>
+	</view>
+	<!-- Submit -->
+	<view hidden="{{submit_hide}}">
+		<text>恭喜您已经完成作答，请点击下方按键提交答案</text>
+		<button form-type="submit">提交</button>
+	</view>
+</form>

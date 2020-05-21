@@ -1,0 +1,15 @@
+/* miniprogram/pages/thankyou/thankyou.js.wxss */
+view{
+  margin-top: 40%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+text{
+
+  font-size: 40rpx;
+}
+button{
+  background-color: rgb(66, 134, 183);
+  font-size: 35rpx;
+  color: white;
+}

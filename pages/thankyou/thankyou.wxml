@@ -1,0 +1,5 @@
+<!--miniprogram/pages/thankyou/thankyou.js.wxml-->
+<view>
+	<text name="thanks">感谢您参与填写本次空气污染防护行为调查问卷，祝您生活愉快！\n\n\n</text>
+</view>
+	<button bindtap="back">返回首页</button>
