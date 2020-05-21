@@ -8,4 +8,7 @@
 *survey answers and randomly-generated image id are stored in an array named 'allQA'
 
 ## Screen shots of the app are attched below
-![Image of question page](./screenshots/personal_info_page.png)
+Image of question page</br>
+<img src="./screenshots/question_page.png" width="40%"></br>
+Image of personal info page</br>
+<img src="./screenshots/personal_info_page.png" width="40%"></br>
