@@ -9,3 +9,4 @@
 
 ## Screen shots of the app are attched below
 ![Image of question page](https://github.com/HarveyLijh/wechat-weixin-miniprogram-survey-with-random-image-gen-multi-choose-questions-qiniuyun/blob/master/screenshots/question_page.png)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
